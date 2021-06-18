@@ -11,3 +11,15 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+//= require semantic-ui
+//= require jquery
+
+$(document).on('turbolinks:load', function(){
+  $('.ui.dropdown') .dropdown();
+})
+
+
+//= require rails-ujs
+//= require activestorage
+//= require turbolinks
+//= require_tree .
