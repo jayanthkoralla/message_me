@@ -1,35 +1,18 @@
-<<<<<<< HEAD
 
 
-=======
->>>>>>> feature
 <%= link_to "Chatroom", root_path, class: "item" %>
 <a class="item">
   Messages
 </a>
-<<<<<<< HEAD
 <div class="right menu">
-  <% if logged_in? %>
-    <%= link_to "Logout", "/logout", method: :delete, class: "item" %>
-  <% else %>
-    <%= link_to "Log in", login_path, class: "item" %>
-  <% end %>
-=======
-
-<div class="right menu">
-  
->>>>>>> feature
-  <% if !logged_in? %>
+    <% if !logged_in? %>
     <div class="item">
       <%= link_to "Log in", login_path, class: "ui primary button" %>
     </div>
-<<<<<<< HEAD
-=======
   <% else %>
     <div class="item">
       <%= link_to "Logout",  logout_path, method: :delete, class: "ui primary button" %>
     </div>
 
->>>>>>> feature
   <% end %>
 </div>
